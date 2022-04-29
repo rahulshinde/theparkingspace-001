@@ -1,0 +1,227 @@
+@media (hover: hover){
+  .image_link button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+  }
+
+  .image_link button:hover:after{
+    border-color: var(--primary);
+  }
+
+  .image_link button:hover img{
+    filter: invert(1);
+  }
+
+  .author_image button:hover svg{
+    fill: var(--primary);
+  }
+
+  button.close_modal:hover{
+    border-color: var(--secondary);
+  }  
+
+  button.close_modal:hover:after{
+    display: none;
+  }
+}
+
+.image_link{
+  box-sizing: border-box;
+  margin-bottom: var(--outer_margin);
+}
+.author_image{
+  width: 8rem;
+  margin-right: 2rem;
+  display: block;
+}
+
+.image_link.author_image button{
+  padding-bottom: 0.5rem;
+}
+
+.author_image svg{
+  width: 2rem;
+  padding: 0 2rem;
+  fill: var(--secondary);
+}
+.image_link button{
+  position: relative;
+  font-family: 'Roundaway Stencil';
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 1rem;
+  padding-top:  1rem;
+  padding-bottom:  1.2rem;
+  border: none;
+  width:  100%;
+  margin: 0;
+  font-size: var(--l_font);
+}
+
+.image_link button:after{
+  content:  '';
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid var(--secondary);
+}
+
+.image_link button:focus-visible{
+  background-color: var(--secondary);
+  color: var(--primary);
+  outline-color: var(--primary);
+  cursor: pointer;
+}
+
+.image_link button:focus-visible:after{
+  border-color: var(--primary);
+}
+
+.image_link button:focus-visible img{
+  filter: invert(1);
+}
+
+button.close_modal:focus-visible{
+  border-color: var(--secondary);
+}  
+
+button.close_modal:focus-visible:after{
+  display: none;
+}
+
+button.close_modal{
+  font-size: var(--l_font);
+  width: calc(100% + 2rem + 8px);
+  border-radius: 0.7rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  margin-left: calc(-1rem - 4px);
+  margin-top: calc(-1rem - 4px);
+  border: 4px solid var(--secondary);
+  box-sizing: border-box;
+}
+button.close_modal:after{
+  display: none;  
+}
+
+.image_container{
+  display: none;
+}
+
+.image_link.open{
+  z-index: 100;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  font-size: var(--m_font);
+  color: var(--secondary);
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 40%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border:  4px solid var(--secondary);
+  border-radius: 1rem;
+}
+
+.image_link.open .image_container:after{
+  position: absolute;
+  content:  '';
+  top:  2rem;
+  right:  2rem;
+  bottom:  2rem;
+  border-radius: 4rem;
+  left:  2rem;
+  border:  4px solid var(--secondary);
+  pointer-events: none;
+}
+
+.image_link.open .image_container{
+  position: fixed;
+  top:  0;
+  left:  0;
+  right:  0;
+  bottom:  0;
+  background-color: var(--primary);
+  border-radius: 4rem;
+  padding:  4rem;
+  z-index: 10;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_container .image_inner_container{
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  width: calc(60% - 2rem);
+  margin-right: 2rem;
+}
+
+.image_inner_container video,
+.image_inner_container img{
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+  background-color: white;
+}
+
+
+@media (max-width: 1000px){
+  .image_link.open .image_container:after{
+    display: none;
+  }
+
+  .image_link.open .image_container{
+    border-radius: 0;
+    padding: var(--outer_margin);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) and (min-height: 1000px){
+  .image_container{
+    flex-direction: column;
+  }
+
+  .image_container .image_inner_container{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .description{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-height: 375px){
+  .image_container{
+    flex-direction: column;
+  }
+
+  .image_container .image_inner_container{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .description{
+    max-width: 100%;
+  }
+}
