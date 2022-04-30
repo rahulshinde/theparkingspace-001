@@ -36,3 +36,42 @@ body.section_3 .artists:after{
   height: 5rem;
   margin-bottom:  1rem;
 }
+
+#illustration1{
+  width: 2rem;
+  top: 50%;
+  right: 10%;
+}
+
+#illustration2{
+  right: 5%;
+  bottom: 55%;
+  width: 10%;
+}
+
+@media (max-width: 1000px), (hover: none){
+  #illustration1{
+    width: 3rem;
+    top: auto;
+    bottom: 5rem;
+    right: auto;
+    left: 5rem;
+  }
+
+  #illustration2{
+    top: auto;
+    right: 2rem;
+    bottom: 2rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
+  #illustration1{
+    bottom: -4rem;
+  }
+
+  #illustration2{
+    bottom: 10rem;
+  }
+}
