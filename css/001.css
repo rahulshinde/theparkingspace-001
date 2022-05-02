@@ -53,7 +53,7 @@ body.section_2 .about:after{
   #illustration1{
     width: 3rem;
     top: auto;
-    bottom: 5rem;
+    bottom: 1rem;
     right: auto;
     left: 5rem;
   }
@@ -61,7 +61,7 @@ body.section_2 .about:after{
   #illustration2{
     top: auto;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 10rem;
     width: 30%;
   }
 }
