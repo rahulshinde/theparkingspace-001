@@ -10,6 +10,10 @@ body.section_2 .about:after{
   display: block; 
 }
 
+body.section_3 .survey:after{
+  display: block; 
+}
+
 #listen{
 	text-align: center;
   text-align: center;
@@ -35,6 +39,10 @@ body.section_2 .about:after{
 #print_download img{
   height: 5rem;
   margin-bottom: -1.5rem;
+}
+
+#survey{
+  text-align: center;
 }
 
 #illustration1{
