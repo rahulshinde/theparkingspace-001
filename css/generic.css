@@ -18,6 +18,11 @@
   #back_link:hover #back_arrow path{
     fill: var(--secondary);
   }
+
+  .print_download:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
 }
 
 @font-face {
@@ -500,6 +505,38 @@ a{
   width: 80%;
   margin-left: 3%;
   margin-bottom: 3rem;
+}
+
+.print_download{
+  margin-top:  0.5rem;
+  display: inline-flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  border: 3px solid var(--primary);
+  padding: 1rem 1.5rem 0 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.print_download .audio_heading{
+  margin-top: 1rem;
+}
+
+.print_download img{
+  height: 8rem;
+  width: auto;
+}
+
+.print_download:focus-visible{
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+.print_download:nth-child(even) img{
+  width: 3rem;
 }
 
 @media (max-width: 1850px){

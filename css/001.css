@@ -23,28 +23,6 @@ body.section_3 .survey:after{
   justify-content: center;
 }
 
-
-.print_download_container{
-  display: flex;
-  width: auto;
-  margin: 0 var(--outer_margin);
-}
-
-#print_download{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#print_download img{
-  height: 5rem;
-  margin-bottom: -1.5rem;
-}
-
-#survey{
-  text-align: center;
-}
-
 #illustration1{
   width: 2rem;
   top: 50%;
