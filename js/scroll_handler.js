@@ -19,6 +19,11 @@ function setup(){
 
   window.addEventListener('scroll', scrollHandler);
   window.addEventListener('resize', calculateSectionPositions);
+  document.querySelector('.page_title').addEventListener('click', scrollToTop);
+}
+
+function scrollToTop(){
+   window.scrollTo(0, 0);
 }
 
 

@@ -117,7 +117,7 @@ body.loaded #loading_container{
   top: 50%;
   left: 50%;
   max-width: 80%;
-  max-height: 80%;
+  max-height: 70%;
   transform: translate(-50%, -50%);
 }
 
@@ -251,6 +251,7 @@ a{
   left: var(--outer_margin);
   margin-bottom: 0;
   z-index: 4;
+  cursor: pointer;
 }
 
 #main_nav{
